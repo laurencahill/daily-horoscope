@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Horoscope</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="../dist/css/swiper.min.css">
+
+  <!-- Demo styles -->
+  <style>
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100vh;
+      font-family: "Futura", sans-serif;
+      color: #fff;
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .container {
+      width: 100%;
+      position: absolute;
+      top: 35%;
+      text-align: center;
+    }
+
+    h1 {
+      font-weight: 300;
+    }
+
+    h3 {
+      color: #eee;
+      font-weight: 100;
+    }
+
+    h5 {
+      color:#eee;
+      font-weight:300;
+    }
+
+    a,
+    a:hover {
+      text-decoration: none;
+      color: #ddd;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .sign-details {
+      text-align: left;
+      font-size: 18px;
+      display: flex;
+      flex-direction: column;
+      margin: 25px;
+      font-family: 'Futura';
+      line-height: 25px;
+    }
+
+    .daily-details {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      margin: 25px;
+      font-family: 'Futura';
+   
+    }
+
+    .match-details {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      margin: 5px;
+      font-family: 'Futura';
+   
+    }
+
+    .zodiac-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .match {
+
+      width: 100px;
+      padding: 25px;
+    }
+
+    .swipe {
+      border: 1px #efefef solid;
+      padding: 10px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Swiper -->
+  <div class="swiper-container swiper-container-h">
+    <div class="swiper-wrapper">
+
+      
+
+      <div class="swiper-slide">
+          
+          <div class="zodica-column">
+          
+          <div class="zodiac-row">
+            <div class="match">
+              <a href="../horoscope/capricorn.html">
+          <img src="../dist/images/capricorn.png" width="80px"/>
+              </a>
+          <div class="match-details">
+             Capricorn
+          </div>
+        </div>
+
+          <div class="match">
+                <a href="../horoscope/aquarius.html">
+            <img src="../dist/images/aquarius.png" width="80px"/></a>
+            <div class="match-details">
+               Aquarius
+            </div>
+            </div>
+
+            <div class="match">
+                    <a href="../horoscope/pisces.html">
+              <img src="../dist/images/pisces.png" width="80px"/></a>
+              <div class="match-details">
+                 Pisces
+              </div>
+              </div>
+          </div>
+
+          <div class="zodiac-row">
+                <div class="match">
+                  <a href="../horoscope/aries.html">
+              <img src="../dist/images/aries.png" width="80px"/>
+                  </a>
+              <div class="match-details">
+                 Aries
+              </div>
+            </div>
+    
+              <div class="match">
+                    <a href="../horoscope/taurus.html">
+                <img src="../dist/images/taurus.png" width="80px"/></a>
+                <div class="match-details">
+                   Taurus
+                </div>
+                </div>
+    
+                <div class="match">
+                        <a href="../horoscope/gemini.html">
+                  <img src="../dist/images/gemini.png" width="80px"/></a>
+                  <div class="match-details">
+                     Gemini
+                  </div>
+                  </div>
+              </div>
+              <div class="zodiac-row">
+                    <div class="match">
+                      <a href="../horoscope/cancer.html">
+                  <img src="../dist/images/cancer.png" width="80px"/></a>
+                      </a>
+                  <div class="match-details">
+                     Cancer
+                  </div>
+                </div>
+        
+                  <div class="match">
+                        <a href="../horoscope/leo.html">
+                    <img src="../dist/images/leo.png" width="80px"/></a>
+                    <div class="match-details">
+                       Leo
+                    </div>
+                    </div>
+        
+                    <div class="match">
+                            <a href="../horoscope/virgo.html">
+                      <img src="../dist/images/virgo.png" width="80px"/></a>
+                      <div class="match-details">
+                         Virgo
+                      </div>
+                      </div>
+                  </div>
+                  <div class="zodiac-row">
+                        <div class="match">
+                          <a href="../horoscope/libra.html">
+                      <img src="../dist/images/libra.png" width="80px"/></a>
+                          </a>
+                      <div class="match-details">
+                         Libra
+                      </div>
+                    </div>
+            
+                      <div class="match">
+                            <a href="../horoscope/scorpio.html">
+                        <img src="../dist/images/scorpio.png" width="80px"/></a>
+                        <div class="match-details">
+                           Scorpio
+                        </div>
+                        </div>
+            
+                        <div class="match">
+                                <a href="../horoscope/sagittarius.html">
+                          <img src="../dist/images/sagittarius.png" width="80px"/></a>
+                          <div class="match-details">
+                             Sagittarius
+                          </div>
+                          </div>
+                      </div>
+        
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+    <!-- Add Pagination -->
+
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="../dist/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiperH = new Swiper('.swiper-container-h', {
+      spaceBetween: 50,
+      pagination: {
+        el: '.swiper-pagination-h',
+        clickable: true,
+      },
+    });
+    var swiperV = new Swiper('.swiper-container-v', {
+      direction: 'vertical',
+      spaceBetween: 50,
+      pagination: {
+        el: '.swiper-pagination-v',
+        clickable: true,
+      },
+    });
+      var months = ['JANUARY','FEBRUARY','MARCH','APRIL','MAY','JUNE','JULY',
+      'AUGUST','SEPTEMBER','OCTOBER','NOVEMBER','DECEMBER'];       
+      var today = new Date();
+      today.setTime(today.getTime());       
+      document.getElementById("spanDate").innerHTML = months[today.getMonth()] + " " + today.getDate()+ ", " + today.getFullYear();
+        
+  </script>
+</body>
+</html>
